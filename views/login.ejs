@@ -1,10 +1,50 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
+<link rel="stylesheet" href="./static/css/login/login.css">
 
-</body>
-</html>
+<div class="container login-area">
+  <form action='/'>
+    <fieldset class='form-group row'>
+      <div class="col-sm-4 col-sm-push-2">
+        <label for="username" class="form-control-label text-right">用户名</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="username" name="username" placeholder="User">
+      </div>
+    </fieldset>
+
+    <fieldset class="form-group row">
+      <div class="col-sm-4 col-sm-push-2">
+        <label for="password" class="form-control-label text-right">密码</label>
+      </div>
+      <div class="col-sm-4">
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+    </fieldset>
+
+    <fieldset class="form-group row">
+      <div class="col-sm-3 col-sm-push-2">
+        <div class="form-control btn btn-primary" id="sign-in">登陆</div>
+      </div>
+      <div class="col-sm-3 col-sm-push-2">
+        <div class="form-control btn btn-secondary">忘记密码</div>
+      </div>
+    </fieldset>
+
+
+
+    <fieldset class="form-group row" id="error-msg" style='display: none;'>
+      <!-- <div class="alert alert-warning alert-dismissible col-sm-6 col-sm-push-2 text-center" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-label="Close" id="error-close">&times;</span></button>
+        <strong>错误</strong><span id="error-text"></span>
+      </div> -->
+    </fieldset>
+
+
+
+  </form>
+</div>
+
+
+
+
+
+<script src="./static/js/login/login.js"></script>
