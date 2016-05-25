@@ -9,7 +9,7 @@ $(document).ready(function(){
     sendData.password=$('#password').val();
     $.ajax({
       type: 'POST',
-      url: '/verifyUser',
+      url: '/nodejs/verifyUser',
       dataType: 'json',
       data: sendData,
       success: function(retData, status){
